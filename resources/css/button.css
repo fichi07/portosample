@@ -1,0 +1,26 @@
+.btn-primary {
+    @apply justify-center font-bold bg-white px-6 py-6 text-center rounded-xl border-2 border-blue-500 border-solid leading-[100%] max-md:px-5 hover:text-portto-black transition-all duration-300 hover:shadow-[0_10px_20px_0_#0147ff] !important;
+}
+
+.btn-secondary {
+    @apply justify-center px-6 py-6 text-center text-white bg-blue-500 rounded-xl shadow-[0px_10px_32px_rgba(0,103,236,0.2)] max-md:px-5 transition-all duration-300 hover:bg-white hover:ring hover:ring-portto-blue hover:text-portto-black !important;
+}
+
+.btn-black {
+    @apply bg-indigo-950 font-bold text-lg text-white rounded-full  py-3 px-5 w-fit transition-all duration-300 hover:bg-white hover:text-portto-black hover:ring hover:ring-portto-black;
+}
+
+.top-link.active {
+    @apply font-semibold border-b-[3px] text-portto-light-gold;
+}
+
+.btn-update {
+    @apply font-semibold text-lg text-white rounded-full py-3 px-5 bg-green-800 w-fit transition-all duration-300 hover:bg-white hover:text-green-400 hover:ring hover:ring-slate-600;
+}
+
+.btn-details {
+    @apply font-semibold text-lg text-white rounded-full py-3 px-5 bg-portto-purple w-fit transition-all duration-300 hover:shadow-[0_10px_20px_0_#4920E5];
+}
+.btn-delete {
+    @apply font-semibold text-lg text-white rounded-full py-3 px-5 bg-red-600 w-fit transition-all duration-300 hover:bg-white hover:text-red-400 hover:ring hover:ring-slate-600;
+}

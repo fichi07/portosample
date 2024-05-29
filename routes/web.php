@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectOrderController;
 use App\Http\Controllers\ToolController;
 use Inertia\Inertia;
 use App\Http\Controllers\ProjectScreenshotController;
@@ -24,6 +25,10 @@ use App\Http\Controllers\ProjectToolController;
 
 Route::get('/',[GuestController::class,'index'])->name('guest.index');
 Route::get('/detail/{project:slug}', [GuestController::class, 'detail'])->name('guest.detail');
+
+ Route::post('/book/save', [GuestController::class, 'store'])->name('guest.book.store');
+ Route::get('/projects', [GuestController::class, 'project'])->name('projects.index');
+  Route::get('/book', [GuestController::class, 'book'])->name('book.index');
 
 
 
